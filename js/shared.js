@@ -1,6 +1,6 @@
 const saveDelayMs = 600;
 
-function creeateSavedToast(saved) {
+function createSavedToast(saved) {
     var hideTimer = null;
 
     return () => {

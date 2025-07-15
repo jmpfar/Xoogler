@@ -1,37 +1,35 @@
 {
-    "name": "Xoogler Shortcuts",
-    "description": "Useful shortcuts!",
-    "version": "1.2",
-    "manifest_version": 2,
-    "icons": {
-        "16": "./icons/icon16.png",
-        "48": "./icons/icon48.png",
-        "128": "./icons/icon128.png",
-        "512": "./icons/icon512.png"
-    },
-    "background": {
-        "scripts": [
-            "./js/map.js",
-            "./js/background.js"
-        ],
-        "persistent": true
-    },
-    "options_page": "options.html",
-    "permissions": [
-        "storage",
-        "webRequest",
-        "webRequestBlocking",
-        "*://b/",
-        "*://c/",
-        "*://cl/",
-        "*://cs/",
-        "*://docs/",
-        "*://drive/",
-        "*://go/",
-        "*://m/",
-        "*://moma/",
-        "*://sheets/",
-        "*://slides/",
-        "*://who/"
-    ]
+	"name": "Xoogler Shortcuts",
+	"description": "Useful shortcuts!",
+	"version": "2.0",
+	"manifest_version": 3,
+	"icons": {
+		"16": "./icons/icon16.png",
+		"48": "./icons/icon48.png",
+		"128": "./icons/icon128.png",
+		"512": "./icons/icon512.png"
+	},
+	"background": {
+		"service_worker": "js/background.js"
+	},
+	"options_page": "options.html",
+	"permissions": ["storage", "declarativeNetRequest"],
+	"host_permissions": [
+		"*://b/*",
+		"*://c/*",
+		"*://cl/*",
+		"*://cs/*",
+		"*://docs/*",
+		"*://drive/*",
+		"*://go/*",
+		"*://m/*",
+		"*://moma/*",
+		"*://sheets/*",
+		"*://slides/*",
+		"*://who/*"
+	],
+	"action": {
+		"default_title": "Xoogler Shortcuts",
+		"default_popup": "go_all.html"
+	}
 }

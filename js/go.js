@@ -13,7 +13,7 @@ chrome.storage.sync.get(
 
 function showPage(destination) {
     const saved = document.querySelector("#savedContainer");
-    const showToast = creeateSavedToast(saved);
+    const showToast = createSavedToast(saved);
 
     const shortcutText = document.querySelector("#shortcutText");
     const link = document.createElement("a");

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     const buildTable = (overrides) => {
-        const showToast = creeateSavedToast(saved);
+        const showToast = createSavedToast(saved);
 
         var count = 0;
         for (const key in overrides) {
